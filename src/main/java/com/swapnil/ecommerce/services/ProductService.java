@@ -15,7 +15,8 @@ import java.util.List;
 public class ProductService implements IProductService{
     private final ProductRepository productRepo;
     private final CategoryRepository categoryRepo;
-    public ProductService(ProductRepository productRepo, CategoryRepository categoryRepo){
+
+    public ProductService(ProductRepository productRepo,CategoryRepository categoryRepo){
         this.productRepo = productRepo;
         this.categoryRepo = categoryRepo;
     }

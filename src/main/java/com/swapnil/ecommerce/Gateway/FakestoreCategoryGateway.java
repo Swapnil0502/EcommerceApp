@@ -28,7 +28,7 @@ public class FakestoreCategoryGateway implements ICategoryGateway{
     }
 
     @Override
-    public CategoryDto getCategoryById(int id) throws IOException {
+    public CategoryDto getCategoryById(Long id) throws IOException {
         return this.fakestoreCategoryApi.getCategoriesById(id).execute().body();
     }
 

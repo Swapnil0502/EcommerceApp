@@ -25,7 +25,7 @@ public class FakestoreCategoryService implements ICategoryService {
     }
 
     @Override
-    public CategoryDto getCategoryById(int id) throws IOException {
+    public CategoryDto getCategoryById(Long id) throws IOException {
         return iCategoryGateway.getCategoryById(id);
     }
 
@@ -38,4 +38,9 @@ public class FakestoreCategoryService implements ICategoryService {
 //    public CategoryDto getCategoryByIdRest(int id){
 //        return iCategoryGateway.getCategoryByIdRest(id);
 //    }
+
+    @Override
+    public CategoryDto createCategory(CategoryDto req){
+        return null;
+    }
 }

@@ -9,7 +9,7 @@ import java.util.List;
 public interface ICategoryGateway{
     List<CategoryDto> getAllCategories() throws IOException;
 
-    CategoryDto getCategoryById(int id) throws IOException;
+    CategoryDto getCategoryById(Long id) throws IOException;
 //
 //    List<CategoryDto> getAllRestCategories();
 //

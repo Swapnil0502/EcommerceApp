@@ -14,7 +14,7 @@ public interface FakestoreCategoryApi {
     Call<List<CategoryDto>> getAllCategories()throws IOException;
 
     @GET("products/{id}")
-    Call<CategoryDto> getCategoriesById(@Path("id") int id)throws IOException;
+    Call<CategoryDto> getCategoriesById(@Path("id") Long id)throws IOException;
 
 
 }

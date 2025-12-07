@@ -38,7 +38,7 @@ if(response==null)
     }
 
     @Override
-    public CategoryDto getCategoryById(int id){
+    public CategoryDto getCategoryById(Long id){
         RestTemplate restTemplate = restTemplateBuilder.build();
         return restTemplate.getForObject("https://fakestoreapi.com/products/"+id,CategoryDto.class);
     }
