@@ -23,6 +23,7 @@ public class Product extends BaseEntity {
     private String title;
     private String brand;
     private boolean popular;
+    private Integer rating;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "category_id", nullable = false)

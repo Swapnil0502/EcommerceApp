@@ -25,6 +25,7 @@ public class ProductMapper {
                 .brand(product.getBrand())
                 .popular(product.isPopular())
                 .categoryId(product.getCategory().getId())
+                .rating(product.getRating())
                 .build();
     }
 
@@ -49,6 +50,7 @@ public class ProductMapper {
                 .brand(productDto.getBrand())
                 .popular(productDto.isPopular())
                 .category(category)
+                .rating(productDto.getRating())
                 .build();
 
     }

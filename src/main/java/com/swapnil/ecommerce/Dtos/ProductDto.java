@@ -20,4 +20,5 @@ public class ProductDto {
     private String brand;
     private boolean popular;
     private Long categoryId;
+    private Integer rating;
 }
